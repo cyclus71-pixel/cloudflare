@@ -6,7 +6,7 @@ Cloudflare Tunnel provides you with a secure way to connect your resources to th
 #1 Source
 ([Source](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/))
 #2 My Source
-([Source](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/))
+([My Source](https://github.com/cyclus71-pixel/cloudflare.git))
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Cloudflare Tunnel provides you with a secure way to connect your resources to th
 
 * A Cloudflare account
 * A domain managed by Cloudflare DNS
-* A Linux server (in this example a Raspberry Pi 4)
+* A Linux server (in this example a Debian and Raspberry Pi 4)
 
 ### 1. Install `cloudflared`
 
