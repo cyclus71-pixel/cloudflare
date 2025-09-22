@@ -65,14 +65,27 @@ ingress:
   - service: http_status:404
 ```
 
+Or Debbian
+```
+config.yml
+hostname: <host-local>
+tunnel: <tunnel-uuid>
+credentials-file: /home/pi/.cloudflared/<tunnel-uuid>.json 
+
+```
 Examples of Ingress settings are shown bellow. More information about the configuration settings can be found here : https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/configuration-file/
 
 ### 5. Create a new DNS record
 
 When you add a hostname to the tunnel, you must create a DNS record (CNAME) in cloudflare to link this host to the tunnel. You can do this with the following command:
-
+#On Raspberry Pi 4
 ```
 cloudflared tunnel route dns <tunnel-uuid> <your-domain>
+```
+
+#On Debbian
+```
+cloudflared tunnel route dns <tunnelName> <your-domain>
 ```
 
 > This step is required for each hostname you want to bind to the tunnel.
