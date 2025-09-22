@@ -66,8 +66,7 @@ ingress:
 ```
 
 Or Debbian
-```
-config.yml
+```yml
 hostname: <host-local>
 tunnel: <tunnel-uuid>
 credentials-file: /home/pi/.cloudflared/<tunnel-uuid>.json 
