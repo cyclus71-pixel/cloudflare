@@ -21,6 +21,7 @@ sudo chmod +x /usr/local/bin/cloudflared
 cloudflared -v
 2. Authentification
 cloudflared tunnel login
+
 This command will output an url to authenticate your Cloudflare account.
 
 Open the URL in a browser and login with your Cloudflare credentials
